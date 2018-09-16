@@ -1,0 +1,35 @@
+//css main
+#title{
+    color: blue;
+}
+
+#description{
+    color: green;
+}
+
+#survey-form{
+    color: rebeccapurple
+}
+
+#dropdown{
+    color: orangered;
+}
+#submit{
+    &:hover{
+
+    }
+    &:active{
+
+    }
+}
+
+//form info
+#name{
+
+}
+#email{
+
+}
+#number{
+
+}

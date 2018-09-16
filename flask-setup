@@ -1,0 +1,108 @@
+mkdir flask-vue-crud
+
+inside folder create a folder called server
+
+-pip install flask and flask-Cors,
+
+-create new file app.py
+---
+#app.py
+
+from flask import Flack, jsonify
+from flask_cors import Cors
+#flask-cors is need in order to make cross-origin request from different protocal port, etc
+
+#configuration
+DEBUG = True
+
+#instantiate the app
+app = Flask(__name__)
+app.config.from_obbject(__name)
+
+#enable Cors
+CORS(app)
+
+#sanity check route
+@app.route('/ping!', method=['GET])
+def ping_pong():
+    return jsonify('pong!)
+
+if __name__ =='__main__':
+    app.run()
+
+
+*********************************
+setting up vue - this tutorial is using vue cli 2.9.3
+create ping.vue
+<template> 
+    <div>
+        <p> {{ msg }}
+    </div>
+
+</template>
+<script>
+export default{
+    name: 'ping',
+    data() {
+        return{
+            msg: 'Hello!'
+        };
+    },
+};
+</script>
+
+#update client, index.js to map
+
+import vue
+import Router
+import Ping from '@/components/Ping';
+
+Vue.use(Router);
+
+export default new Router({
+    routes: [
+        {
+            path: '/',
+            name: 'name',
+            component: Ping,
+        },
+    ],
+});
+
+-remove the image form the template
+
+# npm install axios@0.18.0 --save 
+#used to send AJAX request
+
+ #update script ping.vue 
+
+<script>
+import axios from 'axios';
+
+export default{
+    name: 'ping',
+    data() {
+        return{
+            msg: ''
+        };
+    },
+},
+method: {
+    getMessage(){
+        const path = 'http://localhost:5000/ping';
+        axios.get(path)
+            .then((res)=> {
+                this.msg = res.data;
+            })
+            .catch((error) => {
+                //esling-disable-next-line
+                console.error(error);
+            });
+    },
+},
+created() {
+    this.getMessage();
+},
+};
+</script>
+
