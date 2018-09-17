@@ -1,5 +1,39 @@
+@charset "UTF-8";
+html {
+  margin: 0%;
+  font-family: 'Merriweather', serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: center; }
+
+fieldset {
+  border: 0; }
+
+.login {
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+  line-height: 2em; }
+  .login legend {
+    font-weight: 800;
+    font-size: 1.1em; }
+
+.coffeeInfo {
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+  line-height: 2em;
+  background-color: lightcyan; }
+  .coffeeInfo legend {
+    font-weight: 800;
+    font-size: 1.1em; }
+
 #title {
-  color: blue; }
+  color: #ffbc75; }
 
 #description {
   color: green; }
@@ -9,3 +43,31 @@
 
 #dropdown {
   color: orangered; }
+
+/*form info
+#name{
+
+}
+#email{
+
+}
+#number{
+
+}
+
+****below add some approval
+div {
+  margin-bottom: 10px;
+}
+
+input:invalid+span:after {
+  content: '✖';
+  padding-left: 5px;
+}
+
+input:valid+span:after {
+  content: '✓';
+  padding-left: 5px;
+}
+
+*/

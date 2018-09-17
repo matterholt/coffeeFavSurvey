@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="title">
-        <h1>Coffe Survey</h1>
+        <h1>Coffee Survey</h1>
     </div>
     <div id="description">
         <p>
@@ -18,35 +18,72 @@
             So we want to know what you crave.
         </p>
     </div>
-
-    <form action="/coffeeSurvey/data" method="post">
-
-        <div>
+<!--
+    Personal info / log on
+-->
+    <form class="login" action="/coffeeSurvey/users" method="get">
+        <fieldset class="login__perInfo">
+            <legend>Personal Info</legend>
             <label for="name">Name:</label>
             <input type="text" name="userName" id="name-label">
-        </div>
-        <div id="email">
+            <br>
             <label for="email">E-mail</label>
             <input type="email" name="userEmail" id="email">
-        </div>
-        <div>
+        </fieldset>
+    </form>
+    <form class ="coffeeInfo" action="">
+        <fieldset class="fieldset__coffeeAdct">
+            <legend>How serious is your addiction?</legend>
             <label for=" cupPerDay">How many cup per day</label>
-            <input type="number" name="cupPerDay">
-            <h4>How many time per week do you get coff</h4>
-            <label for="coffeePerWk">Every Day</label>
+            <input type="number" name="cupPerDay" placeholder="Cups Per Day" step="1" min="1">
+    
+            <h4>How many time per week do you get coffee</h4>
             <input type="radio" name="everyDay" id="drinkFrequency">
-            <h4>when does the coffee addictoin</h4>
-            <label for="AMdrinkTime">AM</label>
-            <input type="radio" name="AMdrinkTime" id= "drinkTime">
-            <label for="AMdrinkTime">PM</label>
-            <input type="radio" name="PMdrinkTime" id= "drinkTime">
-        </div>
-        <div>
-        </div>
-        <h4>favorite Rost</h4>
-        <h4>Additions</h4>
-        <h4>Shade of collor</h4>
+            <label for="coffeePerWk">Every Day</label>
 
+            <input type="radio" name="everyDay" id="drinkFrequency">
+            <label for="coffeePerWk"> yes Every Day</label>
+
+            <input type="radio" name="everyDay" id="drinkFrequency">
+            <label for="coffeePerWk">never stop</label>
+    
+            <h4>When does the coffee addiction</h4>
+            <label for="AMdrinkTime">AM</label>
+            <input type="radio" name="drinkTime" id= "AMdrinkTime">
+            <label for="AMdrinkTime">PM</label>
+            <input type="radio" name="drinkTime" id= "PMdrinkTime">
+        </fieldset>
+        <fieldset>
+            <legend>Coffee details</legend>
+            <h4>What is the most perferred roast?</h4>
+            <select name="favRoast">
+                    <option value="dark">Dark</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Light">Light</option>
+                    <option value="audi">Audi</option>
+                  </select> 
+            
+            <h4>Favorite thing to add to coffee </h4>
+            <p>Select all that apply</p>
+            <input type="checkbox" id="creamer" name="additions" value="creamer">
+            <label for="creamer">Creamer</label>
+
+            <input type="checkbox" id="milk" name="additions" value="milk">
+            <label for="milk">Milk</label>
+
+            <input type="checkbox" id="suger" name="additions" value="suger" >
+            <label for="suger">Suger</label>
+
+            <input type="checkbox" id="halfHalf" name="additions" value="halfHalf" >
+            <label for="halfHalf">Half & Half</label>
+
+            <input type="checkbox" id="wiskey" name="additions" value="wiskey" >
+            <label for="whiskey">Wiskey</label>
+        </fieldset>
+        <!--
+            when we have time add a slider to 
+            <h4>Shade of collor</h4>
+        -->
     </form>
     
 </body>
