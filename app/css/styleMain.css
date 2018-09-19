@@ -10,17 +10,6 @@
 fieldset {
   border: 0; }
 
-.login {
-  margin: auto;
-  display: flex;
-  flex-flow: column;
-  align-content: center;
-  justify-content: center;
-  line-height: 2em; }
-  .login legend {
-    font-weight: 800;
-    font-size: 1.1em; }
-
 .coffeeInfo {
   display: flex;
   flex-flow: column;
@@ -30,6 +19,11 @@ fieldset {
     font-weight: 800;
     font-size: 1.1em; }
 
+header {
+  padding: 4em;
+  background-image: url("/images/brown-caffeine-coffee-531873.jpg");
+  background-size: 100%; }
+
 #title {
   color: #ffbc75; }
 
@@ -37,7 +31,10 @@ fieldset {
   color: green; }
 
 #survey-form {
-  color: rebeccapurple; }
+  position: relative;
+  margin: 0 10%;
+  background-image: linear-gradient(45deg, orange, red);
+  width: 60%; }
 
 #dropdown {
   color: orangered; }
