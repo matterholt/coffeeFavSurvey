@@ -35,8 +35,8 @@ body {
   background-color: #ffe66d;
   padding: 0em 1em; }
   .coffeeInfo__card {
-    margin: 0em 10%;
-    padding: 3em 0em;
+    margin: 5%;
+    padding: 3em;
     background-color: #f7fff7; }
 
 /*
@@ -61,7 +61,7 @@ body {
   height: 50px;
   max-width: 300px;
   margin: auto;
-  padding: 30;
+  padding: 0.5em;
   background: #6ca6c1;
   border-radius: 5px;
   box-shadow: 6px 7px 8px #5ac5c485;

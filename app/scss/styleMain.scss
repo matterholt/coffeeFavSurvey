@@ -44,8 +44,8 @@ body {
   background-color: $threeColor;
   padding: 0em 1em;
   &__card {
-    margin: 0em 10%;
-    padding: 3em 0em;
+    margin: 5%;
+    padding: 3em;
     background-color: $lightColor;
   }
 }
@@ -74,7 +74,7 @@ body {
   height: 50px;
   max-width: 300px;
   margin: auto;
-  padding: 30;
+  padding: 0.5em;
   background: $oneColor;
   border-radius: 5px;
   box-shadow: 6px 7px 8px #5ac5c485;
