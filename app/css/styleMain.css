@@ -1,71 +1,75 @@
-@charset "UTF-8";
 :root {
-  margin: 0;
-  padding: 0;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 1em;
   line-height: 1.5em;
   text-align: center; }
 
-fieldset {
-  border: 0; }
+body {
+  margin: 0;
+  padding: 0; }
 
-.login {
-  margin: auto;
-  display: flex;
-  flex-flow: column;
-  align-content: center;
-  justify-content: center;
-  line-height: 2em; }
-  .login legend {
-    font-weight: 800;
-    font-size: 1.1em; }
+#title {
+  width: auto;
+  height: auto;
+  padding: 0.5em 0.5em;
+  color: #ffe66d;
+  background-color: #2f3061;
+  font-size: 2em;
+  font-family: "Dancing Script", cursive; }
 
+#description {
+  width: auto;
+  height: auto;
+  padding: 1em;
+  background-color: #2f3061;
+  color: #f7fff7; }
+
+/*
+***  Creating the background  Card***
+*/
 .coffeeInfo {
   display: flex;
   flex-flow: column;
+  justify-content: center;
   line-height: 2em;
-  background-color: lightcyan; }
-  .coffeeInfo legend {
-    font-weight: 800;
-    font-size: 1.1em; }
+  background-color: #ffe66d;
+  padding: 0em 1em; }
+  .coffeeInfo__card {
+    margin: 0em 10%;
+    padding: 3em 0em;
+    background-color: #f7fff7; }
 
-#title {
-  color: #ffbc75; }
-
-#description {
-  color: green; }
-
+/*
+***  working on the form part ***
+*/
 #survey-form {
   color: rebeccapurple; }
 
 #dropdown {
   color: orangered; }
 
-/*form info
-#name{
+#textArea {
+  width: 75%;
+  height: 5em; }
 
-}
-#email{
-
-}
-#number{
-
-}
-
-****below add some approval
-div {
-  margin-bottom: 10px;
-}
-
-input:invalid+span:after {
-  content: '✖';
-  padding-left: 5px;
-}
-
-input:valid+span:after {
-  content: '✓';
-  padding-left: 5px;
-}
-
+/* 
+***Creating the submittion button ***
 */
+#submit {
+  font-size: 1.5em;
+  width: 100%;
+  height: 50px;
+  max-width: 300px;
+  margin: auto;
+  padding: 30;
+  background: #6ca6c1;
+  border-radius: 5px;
+  box-shadow: 6px 7px 8px #5ac5c485;
+  outline: none; }
+  #submit:hover {
+    background: #5ba0a0;
+    color: #fff; }
+  #submit:active {
+    background: #5ba0a0;
+    color: #fff;
+    box-shadow: 6px 7px 8px #5ac5c485; }

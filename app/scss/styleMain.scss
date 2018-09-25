@@ -1,89 +1,91 @@
-
 //css main
-:root{
-    margin: 0;
-    padding: 0;
-    font-family: 'Merriweather', serif;
-    font-size: 1em;
-    line-height: 1.5em; 
-    text-align: center;
-}
-fieldset{
-    border: 0;
-}
+$oneColor: #6ca6c1;
+$threeColor: #ffe66d;
+$darkColor: #2f3061;
+$lightColor: #f7fff7;
 
-.login{
-    margin: auto;
-    display:flex;
-    flex-flow: column;
-    align-content: center;
-    justify-content: center;
-    line-height: 2em;   
-    legend{
-        font-weight: 800;
-        font-size:1.1em;
-    }
-}
-.coffeeInfo{
-    display:flex;
-    flex-flow: column;
-    line-height: 2em;   
-    background-color: lightcyan;
-    legend{
-        font-weight: 800;
-        font-size:1.1em;
-    }
+:root {
+  font-family: "Merriweather", serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: center;
 }
 
-#title{
-    color: rgb(255, 188, 117);
+body {
+  margin: 0;
+  padding: 0;
 }
 
-#description{
-    color: green;
+#title {
+  width: auto;
+  height: auto;
+  padding: 0.5em 0.5em;
+  color: $threeColor;
+  background-color: $darkColor;
+  font-size: 2em;
+  font-family: "Dancing Script", cursive;
+}
+#description {
+  width: auto;
+  height: auto;
+  padding: 1em;
+  background-color: $darkColor;
+  color: $lightColor;
 }
 
-#survey-form{
-    color: rebeccapurple
-}
-
-#dropdown{
-    color: orangered;
-}
-#submit{
-    &:hover{
-
-    }
-    &:active{
-
-    }
-}
-
-
-/*form info
-#name{
-
-}
-#email{
-
-}
-#number{
-
-}
-
-****below add some approval
-div {
-  margin-bottom: 10px;
-}
-
-input:invalid+span:after {
-  content: '✖';
-  padding-left: 5px;
-}
-
-input:valid+span:after {
-  content: '✓';
-  padding-left: 5px;
-}
-
+/*
+***  Creating the background  Card***
 */
+.coffeeInfo {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  line-height: 2em;
+  background-color: $threeColor;
+  padding: 0em 1em;
+  &__card {
+    margin: 0em 10%;
+    padding: 3em 0em;
+    background-color: $lightColor;
+  }
+}
+/*
+***  working on the form part ***
+*/
+
+#survey-form {
+  color: rebeccapurple;
+}
+
+#dropdown {
+  color: orangered;
+}
+#textArea {
+  width: 75%;
+  height: 5em;
+}
+
+/* 
+***Creating the submittion button ***
+*/
+#submit {
+  font-size: 1.5em;
+  width: 100%;
+  height: 50px;
+  max-width: 300px;
+  margin: auto;
+  padding: 30;
+  background: $oneColor;
+  border-radius: 5px;
+  box-shadow: 6px 7px 8px #5ac5c485;
+  outline: none;
+  &:hover {
+    background: #5ba0a0;
+    color: #fff;
+  }
+  &:active {
+    background: #5ba0a0;
+    color: #fff;
+    box-shadow: 6px 7px 8px #5ac5c485;
+  }
+}

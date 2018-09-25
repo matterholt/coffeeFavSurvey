@@ -1,64 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Best Coffee Theory</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link rel="stylesheet" href="css/styleMain.css">
 </head>
+
 <body>
     <div id="title">
         <h1>Coffee Survey</h1>
     </div>
     <div id="description">
+        <h2>We would like to know how addicted to coffee our user are</h2>
+        <p>Fill out the form to obtain our awesome coffee that will get you through the day!</p>
     </div>
-<!--
-    Personal info / log on
--->
-<form id = "survey-form" class ="coffeeInfo" action="">
-        <div id="survey-form">
-            <div id="name">
-                <label for="name">Name:</label>
-                <input type="text" name="userName" id="name-label">
-            </div>
-            <div id="email">
-                <label for="email">E-mail</label>
-                <input type="email" name="userEmail" id="email">
-            </div>
-            <div id="number">
-                <label for=" cupPerDay">How many cup per day</label>
-                <input type="number" name="cupPerDay" placeholder="Cups Per Day" step="1" min="1">
-            </div>
-            <div id="radio">
-                <input type="radio" name="everyDay" id="drinkFrequency">
-                <label for="coffeePerWk">Every Day</label>
-    
-                <input type="radio" name="everyDay" id="drinkFrequency">
-                <label for="coffeePerWk"> yes Every Day</label>
-    
-                <input type="radio" name="everyDay" id="drinkFrequency">
-                <label for="coffeePerWk">never stop</label>
-            </div>
-            <div id="dropdown">
-                <select name="favRoast" id="dropdown">
-                    <option value="dark">Dark</option>
-                    <option value="Medium">Medium</option>
-                    <option value="Light">Light</option>
-                </select> 
-            </div>
-            <div id="textarea">
+
+
+
+    <div class="coffeeInfo">
+        <form id="survey-form" class="coffeeInfo__card" action="">
+            <div id="survey-form">
+
+
+
+                <div id="name">
+                    <label for="name">Name:</label>
+                    <input type="text" name="userName" id="name-label">
+                </div>
+                <div id="email">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="userEmail" id="email">
+                </div>
+
+
+
+                <div id="number">
+                    <label for=" cupPerDay">How many cup per day</label>
+                    <input type="number" name="cupPerDay" placeholder="Cups Per Day" step="1" min="1">
+                </div>
+
+
+
+                <div id="radio">
+                    <input type="radio" name="everyDay" id="drinkFrequency">
+                    <label for="coffeePerWk">Every Day</label>
+
+                    <input type="radio" name="everyDay" id="drinkFrequency">
+                    <label for="coffeePerWk"> yes Every Day</label>
+
+                    <input type="radio" name="everyDay" id="drinkFrequency">
+                    <label for="coffeePerWk">never stop</label>
+                </div>
+
+
+                <div id="dropdown">
+                    <select name="favRoast" id="dropdown">
+                        <option value="dark">Dark</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Light">Light</option>
+                    </select>
+                </div>
+
+
+
+                <div id="textarea">
                     <h4>Favorite thing to add to coffee </h4>
 
-                    <textarea name="" id="" cols="60" rows="10"></textarea>
+                    <textarea name="moreComments" id="textArea"></textarea>
+                </div>
+                <button type="button" name="button" id="submit"> Submitt</button>
+
             </div>
-            <div id="submit"></div>
-            
-        </div>
+        </form>
+    </div>
 
 
-    </form>
-
-    
 </body>
+
 </html>
