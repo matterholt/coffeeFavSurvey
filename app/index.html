@@ -15,18 +15,13 @@
         <h1>Coffee Survey</h1>
     </div>
     <div id="description">
-        <h2>We would like to know what type of coffee <br> that feed your addicted </h2>
+        <p>We would like to know what type of coffee <br> that feed your addicted </p>
         <p>Fill out the form to obtain our awesome coffee that will get you through the day!</p>
     </div>
-
-
 
     <div class="coffeeInfo">
         <form id="survey-form" class="coffeeInfo__card" action="">
             <div id="survey-form">
-
-
-
                 <div id="name">
                     <label for="name">Name:</label>
                     <input type="text" name="userName" id="name-label">
@@ -36,28 +31,27 @@
                     <input type="email" name="userEmail" id="email">
                 </div>
 
-
-
                 <div id="number">
                     <label for=" cupPerDay">How many cup per day</label>
+                    <br>
                     <input type="number" name="cupPerDay" placeholder="Cups Per Day" step="1" min="1">
                 </div>
 
-
-
                 <div id="radio">
+                    <h3>When do you drink the most coffee</h3>
                     <input type="radio" name="everyDay" id="drinkFrequency">
-                    <label for="coffeePerWk">Every Day</label>
+                    <label for="coffeePerWk">AM</label>
 
                     <input type="radio" name="everyDay" id="drinkFrequency">
-                    <label for="coffeePerWk"> yes Every Day</label>
+                    <label for="coffeePerWk"> PM</label>
 
                     <input type="radio" name="everyDay" id="drinkFrequency">
-                    <label for="coffeePerWk">never stop</label>
+                    <label for="coffeePerWk">Non-Stop</label>
                 </div>
 
 
                 <div id="dropdown">
+                    <p>What kind of Roast do you enjoy?</p>
                     <select name="favRoast" id="dropdown">
                         <option value="dark">Dark</option>
                         <option value="Medium">Medium</option>
@@ -68,8 +62,7 @@
 
 
                 <div id="textarea">
-                    <h4>Favorite thing to add to coffee </h4>
-
+                    <p>Favorite thing to add to coffee </p>
                     <textarea name="moreComments" id="textArea"></textarea>
                 </div>
                 <button type="button" name="button" id="submit"> Submitt</button>

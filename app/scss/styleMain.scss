@@ -1,8 +1,8 @@
 //css main
-$oneColor: #6ca6c1;
-$threeColor: #ffe66d;
-$darkColor: #2f3061;
-$lightColor: #f7fff7;
+$oneColor: #0e4d6c;
+$threeColor: #f05833;
+$darkColor: #2c4653;
+$lightColor: #e9ddc7;
 
 :root {
   font-family: "Merriweather", serif;
@@ -46,6 +46,7 @@ body {
   &__card {
     margin: 5%;
     padding: 3em;
+    border-radius: 10px;
     background-color: $lightColor;
   }
 }
@@ -54,12 +55,13 @@ body {
 */
 
 #survey-form {
-  color: rebeccapurple;
+  font-size: 1.2em;
 }
 
 #dropdown {
-  color: orangered;
+  font-size: 1em;
 }
+
 #textArea {
   width: 75%;
   height: 5em;
@@ -69,23 +71,21 @@ body {
 ***Creating the submittion button ***
 */
 #submit {
-  font-size: 1.5em;
-  width: 100%;
-  height: 50px;
-  max-width: 300px;
-  margin: auto;
-  padding: 0.5em;
+  font-size: 1.2em;
+  margin: 1em;
+  padding: 0.5em 1em;
   background: $oneColor;
+  color: #d2d2d2;
   border-radius: 5px;
-  box-shadow: 6px 7px 8px #5ac5c485;
   outline: none;
   &:hover {
-    background: #5ba0a0;
-    color: #fff;
+    background: #0e4d6ccc;
+    color: #d2d2d2;
   }
   &:active {
-    background: #5ba0a0;
-    color: #fff;
-    box-shadow: 6px 7px 8px #5ac5c485;
+    background: #1a7cadcc;
+    color: #d9edff;
+    border: none;
+    box-shadow: 2px 3px 3px $oneColor;
   }
 }
