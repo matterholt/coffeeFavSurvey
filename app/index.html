@@ -11,47 +11,55 @@
 </head>
 
 <body>
-    <div id="title">
-        <h1>Coffee Survey</h1>
-    </div>
-    <div id="description">
-        <p>We would like to know what type of coffee <br> that feed your addicted </p>
-        <p>Fill out the form to obtain our awesome coffee that will get you through the day!</p>
-    </div>
+    <header>
+        <h1 id="title">Coffee Survey</h1>
+        <p id="description">We would like to know what type of coffee that feed your addicted!
+            <br>Fill out the form to obtain our awesome coffee that will get you through the day!</p>
+    </header>
 
     <div class="coffeeInfo">
         <form id="survey-form" class="coffeeInfo__card" action="">
-            <div id="survey-form">
-                <div id="name">
-                    <label for="name">Name:</label>
-                    <input type="text" name="userName" id="name-label">
-                </div>
-                <div id="email">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="userEmail" id="email">
-                </div>
 
-                <div id="number">
-                    <label for=" cupPerDay">How many cup per day</label>
-                    <br>
-                    <input type="number" name="cupPerDay" placeholder="Cups Per Day" step="1" min="1">
-                </div>
+            <div id="survey-form">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" required placeholder="John C Doe" name="userName" id="name">
+                <label for="email" id="email-label">E-mail</label>
+                <input type="email" required placeholder="johnDoe@freeCodeCamp.com" name="userEmail" id="email" pattern=".+@+.com">
+                <label for="cupPerDay" id="number-label">How many cup per day</label>
+                <input id="number" type="number" name="cupPerDay" placeholder="Cups Per Day" step="1" min="1" max="1000">
 
                 <div id="radio">
                     <h3>When do you drink the most coffee</h3>
-                    <input type="radio" name="everyDay" id="drinkFrequency">
-                    <label for="coffeePerWk">AM</label>
-
-                    <input type="radio" name="everyDay" id="drinkFrequency">
-                    <label for="coffeePerWk"> PM</label>
-
-                    <input type="radio" name="everyDay" id="drinkFrequency">
-                    <label for="coffeePerWk">Non-Stop</label>
+                    <ul style="list-style: none;">
+                        <li><label><input type="radio" name="radio-button" value="1">AM </label></li>
+                        <li><label><input type="radio" name="radio-button" value="2">PM </label></li>
+                        <li><label><input type="radio" name="radio-button" value="3">Never Stop </label></li>
+                    </ul>
                 </div>
 
-
+                <div id="radio">
+                    <h3>Favorite Coffee types</h3>
+                    <ul style="list-style:none">
+                        <li><label><input type="checkbox" name="favstyle" value="Cappuccino" id="favoriteType">Cappuccino</label></li>
+                        <li><label><input type="checkbox" name="favstyle" value="FlatWhite" id="favoriteType">Flat
+                                White</label></li>
+                        <li><label><input type="checkbox" name="favstyle" value="IrishCoffee" id="favoriteType">Irish
+                                Coffee</label></li>
+                        <li><label><input type="checkbox" name="favstyle" value="LongBlack" id="favoriteType">Long
+                                Black</label></li>
+                        <li><label><input type="checkbox" name="favstyle" value="CaffeeMocha" id="favoriteType">Caffee
+                                Mocha</label></li>
+                        <li><label><input type="checkbox" name="favstyle" value="CaffeAmericano" id="favoriteType">Caffe
+                                Americano</label></li>
+                        <li><label><input type="checkbox" name="favstyle" value="CaffeMacchiato" id="favoriteType">Caffe
+                                Macchiato</label></li>
+                        <li><label><input type="checkbox" name="favstyle" name="favstyle" value="Espresso" id="favoriteType">Espresso</label></li>
+                        <li><label><input type="checkbox" name="favstyle" value="CaffeAmericano" id="favoriteType">Caffe
+                                Americano</label></li>
+                    </ul>
+                </div>
                 <div id="dropdown">
-                    <p>What kind of Roast do you enjoy?</p>
+                    <h3>What kind of Roast do you enjoy?</h3>
                     <select name="favRoast" id="dropdown">
                         <option value="dark">Dark</option>
                         <option value="Medium">Medium</option>
@@ -59,19 +67,13 @@
                     </select>
                 </div>
 
-
-
                 <div id="textarea">
-                    <p>Favorite thing to add to coffee </p>
+                    <h3>Favorite thing to add to coffee </h3>
                     <textarea name="moreComments" id="textArea"></textarea>
                 </div>
-                <button type="button" name="button" id="submit"> Submitt</button>
-
-            </div>
+                <button type="submit" id="submit"> Submit</button>
         </form>
     </div>
-
-
 </body>
 
 </html>

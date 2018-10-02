@@ -4,88 +4,53 @@ $threeColor: #f05833;
 $darkColor: #2c4653;
 $lightColor: #e9ddc7;
 
-:root {
-  font-family: "Merriweather", serif;
-  font-size: 1em;
-  line-height: 1.5em;
-  text-align: center;
-}
-
 body {
-  margin: 0;
-  padding: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='88' viewBox='0 0 80 88' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22 21.91V26h-2c-9.94 0-18 8.06-18 18 0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73 3.212-6.99 9.983-12.008 18-12.73V62h2c9.94 0 18-8.06 18-18 0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73-3.212 6.99-9.983 12.008-18 12.73zM54 58v4.696c-5.574 1.316-10.455 4.428-14 8.69-3.545-4.262-8.426-7.374-14-8.69V58h-5.993C12.27 58 6 51.734 6 44c0-7.732 6.275-14 14.007-14H26v-4.696c5.574-1.316 10.455-4.428 14-8.69 3.545 4.262 8.426 7.374 14 8.69V30h5.993C67.73 30 74 36.266 74 44c0 7.732-6.275 14-14.007 14H54zM42 88c0-9.94 8.06-18 18-18h2v-4.09c8.016-.722 14.787-5.738 18-12.73v7.434c-3.545 4.262-8.426 7.374-14 8.69V74h-5.993C52.275 74 46 80.268 46 88h-4zm-4 0c0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73v7.434c3.545 4.262 8.426 7.374 14 8.69V74h5.993C27.73 74 34 80.266 34 88h4zm4-88c0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73v-7.434c-3.545-4.262-8.426-7.374-14-8.69V14h-5.993C52.27 14 46 7.734 46 0h-4zM0 34.82c3.213-6.992 9.984-12.008 18-12.73V18h2c9.94 0 18-8.06 18-18h-4c0 7.732-6.275 14-14.007 14H14v4.696c-5.574 1.316-10.455 4.428-14 8.69v7.433z' fill='%23ac9e92' fill-opacity='0.41' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
-
-#title {
-  width: auto;
-  height: auto;
-  padding: 0.5em 0.5em;
-  color: $threeColor;
-  background-color: $darkColor;
-  font-size: 2em;
-  font-family: "Dancing Script", cursive;
-}
-#description {
-  width: auto;
-  height: auto;
+header {
+  background-color: $oneColor;
   padding: 1em;
-  background-color: $darkColor;
-  color: $lightColor;
+  text-align: center;
+  border-radius: 10px;
+  margin: 1em 0em;
+  h1 {
+    color: $threeColor;
+    font-family: cursive;
+    font-size: 3em;
+    font-weight: bolder;
+  }
+  p {
+    color: $lightColor;
+  }
 }
-
-/*
-***  Creating the background  Card***
-*/
-.coffeeInfo {
+#survey-form {
   display: flex;
   flex-flow: column;
-  justify-content: center;
-  line-height: 2em;
-  background-color: $threeColor;
-  padding: 0em 1em;
-  &__card {
-    margin: 5%;
-    padding: 3em;
-    border-radius: 10px;
-    background-color: $lightColor;
-  }
-}
-/*
-***  working on the form part ***
-*/
-
-#survey-form {
-  font-size: 1.2em;
-}
-
-#dropdown {
+  line-height: 1.5em;
   font-size: 1em;
+  width: 80%;
+  margin: auto;
+  padding: 1em;
+  border-radius: 25px;
+  background-color: #e9ddc7;
 }
-
-#textArea {
-  width: 75%;
-  height: 5em;
-}
-
-/* 
-***Creating the submittion button ***
-*/
-#submit {
+label {
   font-size: 1.2em;
-  margin: 1em;
-  padding: 0.5em 1em;
-  background: $oneColor;
-  color: #d2d2d2;
+}
+
+#submit {
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  width: 50%;
+  background: #f6f7f9;
+  border: 1px solid #ced0d4;
+  color: #4d4f56;
   border-radius: 5px;
-  outline: none;
-  &:hover {
-    background: #0e4d6ccc;
-    color: #d2d2d2;
-  }
   &:active {
-    background: #1a7cadcc;
-    color: #d9edff;
-    border: none;
-    box-shadow: 2px 3px 3px $oneColor;
+    background: #d8dade;
+    border-color: #d8dade;
+  }
+  &:hover {
+    background: #e9ebee;
   }
 }
